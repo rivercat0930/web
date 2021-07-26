@@ -1,22 +1,25 @@
 @charset "UTF-8";
-
 * {
-	/* 外框 */
-	margin: 0;
-	/* 內框 */
-	padding: 0;
+    /* 外框 */
+    margin: 0;
+    /* 內框 */
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 .header_bar {
-	/* 外框 */
-	margin: 0;
-	/* 被景色 */
-	background-color: rgba(0, 0, 0, .6);
+    /* 外框 */
+    margin: 0;
+    /* 被景色 */
+    background-color: rgba(0, 0, 0, .6);
 }
 
 .back {
-	/* 外框 */
-	margin: 0;
+    /* 外框 */
+    margin: 0;
     /* 內框 */
     padding: 5% 10%;
     /* 背景顏色 */
@@ -35,61 +38,71 @@
     background-size: cover;
 }
 
-.article, .sidebar, footer{
-	/* 背景顏色 */
+.article,
+.sidebar,
+footer {
+    /* 背景顏色 */
     background-color: #ffffffa8;
-	/* 內框 */
+    /* 內框 */
     padding: 3% 4%;
 }
 
+.article {
+    text-indent: 2em;
+}
+
+.articletitle {
+    text-indent: 0;
+}
+
 .out_sidebar {
-	/* 外框 */
-	margin: 5% 0 0 0;
-	/* 內框 */
-	padding: 0;
+    /* 外框 */
+    margin: 5% 0 0 0;
+    /* 內框 */
+    padding: 0;
 }
 
 .sidebar {
-	/* 外框 */
-	margin: 0 0 5% 0;
+    /* 外框 */
+    margin: 0 0 5% 0;
 }
 
-.article > * {
-	/* 內框 */
+.article>* {
+    /* 內框 */
     padding: 2% 0;
 }
 
 .article img {
-	/* 寬度 */
+    /* 寬度 */
     width: 100%;
 }
 
 footer {
-	/* 背景顏色 */
-	background-color: rgba(0, 0, 0, .6);
-	/* 內框 */
-	padding: 2%;
+    /* 背景顏色 */
+    background-color: rgba(0, 0, 0, .6);
+    /* 內框 */
+    padding: 2%;
 }
 
-footer > * {
-	/* 外框 */
-	margin: 0;
+footer>* {
+    /* 外框 */
+    margin: 0;
 }
+
 
 /* 視窗大小 小於1200px使用以下設定 */
-@media screen and (min-width: 1200px) {
-	.article {
-		/* 外框 */
-		margin: 0 2% 0 0;
-	}
 
-	.out_sidebar {
-		/* 外框 */
-		margin: 0 0 0 2%;
-	}
-	
-	.sidebar {
-		/* 外框 */
-		margin: 0 0 10% 0;
-	}
+@media screen and (min-width: 1200px) {
+    .article {
+        /* 外框 */
+        margin: 0 2% 0 0;
+    }
+    .out_sidebar {
+        /* 外框 */
+        margin: 0 0 0 2%;
+    }
+    .sidebar {
+        /* 外框 */
+        margin: 0 0 10% 0;
+    }
 }
