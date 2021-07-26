@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+* {
+	/* 外框 */
+	margin: 0;
+	/* 內框 */
+	padding: 0;
+}
+
+.header_bar {
+	/* 外框 */
+	margin: 0;
+	/* 被景色 */
+	background-color: rgba(0, 0, 0, .6);
+}
+
+.back {
+	/* 外框 */
+	margin: 0;
+    /* 內框 */
+    padding: 5% 10%;
+    /* 背景顏色 */
+    background-color: rgba(0, 0, 0, .6);
+    /* 背景混和模式 */
+    background-blend-mode: multiply;
+    /* 背景圖片 */
+    background-image: url("sleepcat.jpg");
+    /* 背景重複:不重複 */
+    background-repeat: no-repeat;
+    /* 背景圖位置:置中 */
+    background-position: center;
+    /* 背景圖附著模式 */
+    background-attachment: fixed;
+    /* 背景圖大小:覆蓋 */
+    background-size: cover;
+}
+
+.article, .sidebar, footer{
+	/* 背景顏色 */
+    background-color: #ffffffa8;
+	/* 內框 */
+    padding: 3% 4%;
+}
+
+.out_sidebar {
+	/* 外框 */
+	margin: 5% 0 0 0;
+	/* 內框 */
+	padding: 0;
+}
+
+.sidebar {
+	/* 外框 */
+	margin: 0 0 5% 0;
+}
+
+.article > * {
+	/* 內框 */
+    padding: 2% 0;
+}
+
+.article img {
+	/* 寬度 */
+    width: 100%;
+}
+
+footer {
+	/* 背景顏色 */
+	background-color: rgba(0, 0, 0, .6);
+	/* 內框 */
+	padding: 2%;
+}
+
+footer > * {
+	/* 外框 */
+	margin: 0;
+}
+
+/* 視窗大小 小於1200px使用以下設定 */
+@media screen and (min-width: 1200px) {
+	.article {
+		/* 外框 */
+		margin: 0 2% 0 0;
+	}
+
+	.out_sidebar {
+		/* 外框 */
+		margin: 0 0 0 2%;
+	}
+	
+	.sidebar {
+		/* 外框 */
+		margin: 0 0 10% 0;
+	}
+}
